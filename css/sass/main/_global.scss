@@ -1,0 +1,94 @@
+body {
+    font-family : Cairo, sans-serif;
+    line-height: 1.7;
+}
+
+
+a {
+    text-decoration: none;
+    color: unset;
+    &:hover {
+        color: unset;
+    }
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+section {
+    padding: 40px 0;
+    p {
+        line-height: 1.9;
+        font-weight: 600;
+        font-size: 17px;
+    }
+}
+
+h1, h2, h3, h4, h6 {
+    color: $color-praimey;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 30px;
+
+    @media (max-width: 575px) {
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+input,
+textarea {
+    transition: .3s ease-out !important;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    box-shadow: 0 0 20px #999 inset;
+
+
+    &:focus {
+        border: none !important;
+        border-bottom: 3px solid #ff9725 !important;
+        outline: none;
+        box-shadow: 0 0 4px #999 inset !important;
+        
+        &::placeholder {
+            opacity: 0.2;
+        }
+    }
+    
+    &::placeholder {
+        color: #999 !important;
+    }
+}
+
+.headein {
+    text-align: center;
+    line-height: 1.7;
+
+    h2 {
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+}
+
+
+#price,
+.apply-form,
+.agent,
+.instructions {
+    padding: 150px 0 50px 0;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(57,73,171,0.5)), to(rgba(57,73,171,0.5))),url(../img/35.jpg);
+    background-image: linear-gradient(to right bottom, rgba(57,73,171,0.5), rgba(57,73,171,0.5)),url(../../img/35.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    h2,h4 {
+        color: #fff;
+    }
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
